@@ -137,3 +137,39 @@ font-size:32px;
 }
 
 }
+.page-hero{
+height:50vh;
+background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+url('../images/church.jpg');
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero-text h1{
+font-size:40px;
+margin-bottom:10px;
+}
+
+.hero-text p{
+font-size:18px;
+max-width:600px;
+margin:auto;
+}
+
+@media(max-width:768px){
+
+.hero-text h1{
+font-size:28px;
+}
+
+.hero-text p{
+font-size:16px;
+}
+
+}
