@@ -7,15 +7,16 @@ font-family:Arial, Helvetica, sans-serif;
 
 body{
 line-height:1.6;
-background:#ffffff;
+background:#fdfbf7;
 color:#333;
 }
 
 /* NAVBAR */
 
 header{
-background:#6a0dad;
+background:#6a0dad; /* Purple */
 color:white;
+position:relative;
 }
 
 .container{
@@ -40,24 +41,26 @@ transition:0.3s;
 }
 
 nav a:hover{
-color:#bcd4f6;
+color:#f4c430; /* Gold hover */
 }
 
 .logo{
 color:#fff;
+font-weight:bold;
 }
 
 .menu-toggle{
 display:none;
 font-size:24px;
 cursor:pointer;
+color:white;
 }
 
 /* HERO */
 
 .hero{
 height:80vh;
-background:linear-gradient(rgba(30,58,138,0.6),rgba(106,13,173,0.6)),
+background:linear-gradient(rgba(106,13,173,0.7),rgba(27,138,58,0.6)),
 url('../images/church.jpg');
 background-size:cover;
 background-position:center;
@@ -66,6 +69,7 @@ align-items:center;
 justify-content:center;
 text-align:center;
 color:white;
+padding:20px;
 }
 
 .hero h1{
@@ -74,21 +78,24 @@ font-size:48px;
 
 .hero p{
 margin-top:10px;
+font-size:18px;
 }
 
 .btn{
 display:inline-block;
 margin-top:20px;
 padding:12px 24px;
-background:#3b82f6;
-color:white;
+background:#f4c430; /* Gold */
+color:#6a0dad;
 text-decoration:none;
 border-radius:5px;
+font-weight:bold;
 transition:0.3s;
 }
 
 .btn:hover{
-background:#1e3a8a;
+background:#1b8a3a; /* Green */
+color:white;
 }
 
 /* SECTIONS */
@@ -96,6 +103,11 @@ background:#1e3a8a;
 section{
 padding:60px 20px;
 text-align:center;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:40px;
 }
 
 /* MINISTRY GRID */
@@ -113,7 +125,7 @@ padding:25px;
 border-radius:10px;
 box-shadow:0 5px 15px rgba(0,0,0,0.08);
 transition:0.4s;
-border-top:4px solid #6a0dad;
+border-top:4px solid #f4c430; /* Gold accent */
 }
 
 .card:hover{
@@ -131,7 +143,7 @@ color:#6a0dad;
 
 .page-hero{
 height:50vh;
-background:linear-gradient(rgba(30,58,138,0.7),rgba(106,13,173,0.7)),
+background:linear-gradient(rgba(106,13,173,0.8),rgba(27,138,58,0.7)),
 url('../images/church.jpg');
 background-size:cover;
 background-position:center;
@@ -158,7 +170,7 @@ margin:auto;
 
 .events{
 padding:70px 20px;
-background:#f3f6ff;
+background:#fdfbf7;
 text-align:center;
 }
 
@@ -209,16 +221,33 @@ text-align:left;
 
 .event-info h3{
 margin-bottom:8px;
-color:#1e3a8a;
+color:#1b8a3a; /* Green heading */
+}
+
+.event-time{
+display:block;
+margin-top:15px;
+font-weight:bold;
+color:#555;
 }
 
 /* CTA */
 
 .cta{
-background:#1e3a8a;
+background:#1b8a3a; /* Green */
 color:white;
 padding:70px 20px;
 text-align:center;
+}
+
+.cta .btn{
+background:#f4c430;
+color:#6a0dad;
+}
+
+.cta .btn:hover{
+background:white;
+color:#1b8a3a;
 }
 
 /* CONTACT */
@@ -241,7 +270,7 @@ padding:30px;
 border-radius:10px;
 box-shadow:0 8px 20px rgba(0,0,0,0.08);
 transition:0.3s;
-border-top:4px solid #3b82f6;
+border-top:4px solid #f4c430;
 }
 
 .contact-card:hover{
@@ -257,7 +286,7 @@ margin-bottom:10px;
 /* CONTACT FORM */
 
 .contact-form{
-background:#f3f6ff;
+background:#fdfbf7;
 padding:70px 20px;
 }
 
@@ -281,12 +310,12 @@ border-radius:5px;
 
 input:focus, textarea:focus{
 outline:none;
-border-color:#6a0dad;
+border-color:#1b8a3a;
 }
 
 .map-box{
 height:200px;
-background:#e6ecff;
+background:#e9f5ec;
 display:flex;
 align-items:center;
 justify-content:center;
@@ -297,8 +326,8 @@ margin-top:10px;
 /* FOOTER */
 
 footer{
-background:#bcd4f6;
-color:#1e3a8a;
+background:#6a0dad;
+color:#f4c430;
 text-align:center;
 padding:30px 20px;
 font-weight:500;
@@ -321,6 +350,7 @@ width:200px;
 nav a{
 padding:10px;
 display:block;
+margin:0;
 }
 
 .menu-toggle{
@@ -347,37 +377,4 @@ font-size:16px;
 grid-template-columns:1fr;
 }
 
-}
-.section-title{
-text-align:center;
-margin-bottom:40px;
-}
-
-.events-grid{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:25px;
-}
-
-.event-card{
-background:white;
-padding:25px;
-border-radius:10px;
-box-shadow:0 4px 10px rgba(0,0,0,0.08);
-transition:0.3s;
-}
-
-.event-card:hover{
-transform:translateY(-5px);
-}
-
-.event-card h3{
-margin-bottom:10px;
-}
-
-.event-time{
-display:block;
-margin-top:15px;
-font-weight:bold;
-color:#555;
 }
