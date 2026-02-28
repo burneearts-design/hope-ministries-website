@@ -456,3 +456,12 @@ transform:scale(1);
 .slide.active{
 opacity:1;
 }
+.slideshow-container{
+position:relative;
+max-width:1000px;
+height:520px;
+margin:auto;
+overflow:hidden;
+border-radius:12px;
+box-shadow:0 15px 35px rgba(0,0,0,0.25);
+}
