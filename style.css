@@ -61,7 +61,7 @@ color:white;
 .hero{
 height:80vh;
 background:linear-gradient(rgba(106,13,173,0.7),rgba(27,138,58,0.6)),
-url('../images/church.jpg');
+url('c.jfif');
 background-size:cover;
 background-position:center;
 display:flex;
