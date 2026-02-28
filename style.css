@@ -327,6 +327,10 @@ margin-top:10px;
 
 footer{
 background:#6a0dad;
+position:fixed;
+bottom:0;
+left:0;
+width:100%;
 color:#f4c430;
 text-align:center;
 padding:30px 20px;
@@ -443,7 +447,7 @@ height:auto;
 left:0;
 top:0;
 opacity:0;
-transition:opacity 2s ease, transform 8s linear;
+transition:opacity 5s ease, transform 13s linear;
 }
 
 .slide.active{
