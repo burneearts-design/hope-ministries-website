@@ -8,6 +8,110 @@
 
 <link rel="stylesheet" href="style.css">
 
+<style>
+
+/* HERO */
+.page-hero{
+height:50vh;
+background:linear-gradient(rgba(106,13,173,0.8),rgba(27,138,58,0.7)),
+url('images/church.jpg');
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+/* CONTAINER */
+.container{
+width:90%;
+max-width:1100px;
+margin:auto;
+}
+
+/* NAV */
+.nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 0;
+}
+
+nav a{
+margin:0 10px;
+text-decoration:none;
+color:#333;
+font-weight:500;
+}
+
+/* ABOUT PAGE */
+.about-page{
+padding:60px 0;
+line-height:1.7;
+}
+
+/* GALLERY */
+.gallery{
+padding:60px 20px;
+background:#f9f9f9;
+text-align:center;
+}
+
+.gallery-text{
+margin-bottom:40px;
+color:#555;
+}
+
+/* GRID LAYOUT */
+.gallery-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+max-width:1100px;
+margin:auto;
+}
+
+/* IMAGES */
+.gallery-grid img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:8px;
+box-shadow:0 4px 10px rgba(0,0,0,0.15);
+transition:0.3s;
+}
+
+.gallery-grid img:hover{
+transform:scale(1.05);
+}
+
+/* RESPONSIVE */
+@media (max-width:900px){
+.gallery-grid{
+grid-template-columns:repeat(2,1fr);
+}
+}
+
+@media (max-width:600px){
+.gallery-grid{
+grid-template-columns:1fr;
+}
+}
+
+/* FOOTER */
+footer{
+background:#6a0dad;
+color:#f4c430;
+text-align:center;
+padding:25px;
+margin-top:40px;
+}
+
+</style>
+
 </head>
 
 <body>
@@ -17,9 +121,7 @@
 <section class="page-hero">
 <div class="hero-text">
 <h1>About Our Ministry</h1>
-<p>
-Sharing the Gospel and empowering believers worldwide.
-</p>
+<p>Sharing the Gospel and empowering believers worldwide.</p>
 </div>
 </section>
 
@@ -27,7 +129,7 @@ Sharing the Gospel and empowering believers worldwide.
 
 <h2 class="logo">Hope Ministries</h2>
 
-<nav id="menu">
+<nav>
 <a href="index.html">Home</a>
 <a href="about.html">About</a>
 <a href="ministries.html">Ministries</a>
@@ -36,8 +138,6 @@ Sharing the Gospel and empowering believers worldwide.
 <a href="give.html">Give</a>
 <a href="contact.html">Contact</a>
 </nav>
-
-<div class="menu-toggle" id="menu-toggle">☰</div>
 
 </div>
 
@@ -57,7 +157,6 @@ is to spread the Gospel, raise leaders, and impact communities
 through faith and service.
 </p>
 
-
 <h2>Our Mission</h2>
 
 <p>
@@ -65,14 +164,12 @@ To spread the Gospel of Jesus Christ, disciple believers,
 and transform communities through faith, love and service.
 </p>
 
-
 <h2>Our Vision</h2>
 
 <p>
 To raise strong believers who influence nations for Christ
 and bring hope to the world through the power of God.
 </p>
-
 
 <h2>Our Offices</h2>
 
@@ -96,19 +193,19 @@ Kenya Office
 Moments captured during worship, outreach and ministry work.
 </p>
 
-<div class="slideshow-container">
+<div class="gallery-grid">
 
-<img class="slide active" src="a.jfif">
-<img class="slide" src="b.jfif">
-<img class="slide" src="d.jfif">
-<img class="slide" src="e.jfif">
-<img class="slide" src="f.jfif">
-<img class="slide" src="g.jfif">
-<img class="slide" src="i.jfif">
-<img class="slide" src="j.jfif">
-<img class="slide" src="k.jfif">
-<img class="slide" src="l.jfif">
-<img class="slide" src="m.jfif">
+<img src="a.jfif">
+<img src="b.jfif">
+<img src="d.jfif">
+<img src="e.jfif">
+<img src="f.jfif">
+<img src="g.jfif">
+<img src="i.jfif">
+<img src="j.jfif">
+<img src="k.jfif">
+<img src="l.jfif">
+<img src="m.jfif">
 
 </div>
 
@@ -120,8 +217,6 @@ Moments captured during worship, outreach and ministry work.
 <footer>
 <p>© 2026 Hope Ministries International</p>
 </footer>
-
-<script src="script.js"></script>
 
 </body>
 </html>
